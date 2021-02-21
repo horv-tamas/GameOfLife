@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Of Life</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+    <div class="grid-container">
+        <span class="error" hidden>Unsupported file! You must use ".lif" file.</span>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class ="refresh">NEW FILE</a></li>
+                <li class="navbar-right">NUMBER OF GENERATIONS: <span class="round"> 0 </span></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="file-upload ">
+                <input type="file" class = "input-file">
+            </div>
+            <canvas class="game" width="650px" height="650px" hidden></canvas>
+        </div>
+        
+        <div class="button-bar" hidden>
+            <ul>
+                <li><button class="next-button">Next</button></li>
+                <li><button class="start-button">Start</button></li>
+                <li><button class="stop-button">Stop</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script type="module" src="App/app.js"></script>
+
+</body>
+</html>
