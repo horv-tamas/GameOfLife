@@ -1,0 +1,123 @@
+*{
+    margin : 0px;
+}
+
+body{
+    background-color: #2e2a23;
+}
+
+.navbar { grid-area: header;}
+.main {grid-area: main;}
+.button-bar {grid-area: button-bar;}
+.error{grid-area: error;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        '. error .'
+        '. header .'
+        '. main . '
+        '. button-bar . ';
+}
+
+.grid-container > *{
+    justify-self: center;
+}
+
+.grid-container > div{
+    background-color: rgba(255,255,255,.2);;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+nav{
+    margin-top: 50px;
+    width: 650px;
+}
+
+nav > ul{
+    background-color: rgba(255,255,255,.2);;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav > ul > li{
+    float:left;
+    list-style: none;
+    color: white;
+}
+
+nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+li.navbar-right{
+    float: right;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+li.navbar-right > span.turns{
+    background-color: white;
+    color: black;
+    padding: 14px;
+}
+
+nav > ul > li > a:hover {
+    background-color: #c49b63;
+    color:white;
+    cursor: pointer;
+}
+
+.file-upload{
+    width: 650px;
+    height: 650px;
+}
+
+.game{
+    background-color: rgba(0,0,0,.2);
+}
+
+.button-bar{
+    width: 650px;
+    text-align:center;
+}
+
+.button-bar > ul > li{
+    display:inline;
+}
+
+button,input{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #c49b63;
+    padding: 15px 60px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+button{
+     max-width: 150px;
+     text-align: center;
+     margin: 5px;
+     outline: none;
+     text-decoration: none;
+     border: none;
+     display:inline-block;
+}
+
+button:hover,input:hover{
+    background-color: chocolate;
+}
+
+.error {
+    background-color: #f84646;
+    border: 1px solid #aa0003;
+    float: left;
+    padding: 20px 30px;
+  }
